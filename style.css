@@ -1,0 +1,25 @@
+#main {
+  margin: 20px;
+}
+
+.intro, #main h1 {
+  width: 80%;
+}
+
+svg.legend {
+  margin: 20px 0px;
+  padding: 0px 10px;
+  display: block;
+}
+
+.city-title {
+  font-size: x-large;
+}
+
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(240, 240, 240, 0.95);
+  border-radius: 4px;
+  font-size: 12px;
+}

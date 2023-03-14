@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>INFO 474 Final Deliverable</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="main">
+    <h1>In cities across the United States, how have the actual daily temperatures from July 2014
+      to June 2015 differed from the average daily temperatures?</h1>
+    <p class="intro">
+      This is an interactive visualization showing the daily temperature anomaly between July 2014
+      to Jun 2015 for various cities across the US. The daily temperature anomaly is the difference
+      between the actual mean temperature for each day between July 2014 to Jun 2015 and the average
+      mean temperature on that day since 1880.
+    </p>
+    <select name="city" id="city-select" onchange="onCategoryChanged()">
+      <option value="ALL">All Cities</option>
+      <option value="CLT">Charlotte, North Carolina</option>
+      <option value="CQT">Los Angeles, California</option>
+      <option value="IND">Indianapolis, Indiana</option>
+      <option value="JAX">Jacksonville, Florida</option>
+      <option value="MDW">Chicago, Illinois</option>
+      <option value="PHL">Philadelphia, Pennsylvania</option>
+      <option value="PHX">Pheonix, Arizona</option>
+      <option value="KHOU">Houston, Texas</option>
+      <option value="KNYC">New York, New York</option>
+      <option value="KSEA">Seattle, Washington</option>
+    </select>
+    <svg width="400" height="60" class="legend">
+      <text x = "0" y="20">Daily Temperature Anomaly (°F)</text>
+      <rect x="10" y="40" width="10" height="10" fill="red" />
+      <text x="30" y="50">Positive Anomaly</text>
+      <rect x="210" y="40" width="10" height="10" fill="blue" />
+      <text x="230" y="50">Negative Anomaly</text>
+    </svg>
+  </div>
+</body>
+<script src="//d3js.org/d3.v5.min.js"></script>
+<script src="./d3-tip.js"></script>
+<script src="./main.js"></script>
+
+</html>
